@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BARIGJET Travel Services</title>
+  <meta name="description" content="Explore. Discover. Experience. BARIGJET Travel Services — curated adventures and custom itineraries across PNG and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <img src="images/logo.png" alt="BARIGJET Travel Services logo" class="logo" />
+      <span class="brand-name">BARIGJET <em>TRAVEL SERVICES</em></span>
+    </div>
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <img src="images/hero-bg.jpg" alt="Travel background" class="hero-bg" />
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="title">Explore. Discover. Experience.</h1>
+      <p class="subtitle">Curated adventures, local expertise, and hassle-free planning across PNG and beyond.</p>
+      <a href="#contact" class="cta">Get Started</a>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>BARIGJET Travel Services crafts meaningful trips—from volcano vistas to rainforest treks and island escapes.
+         Tell us your dream and we’ll plan the itinerary, logistics, and support.</p>
+
+      <ul class="grid">
+        <li class="card"><h3>Tours &amp; Activities</h3><p>Hand-picked guides and cultural experiences.</p></li>
+        <li class="card"><h3>Flights &amp; Transfers</h3><p>Door-to-door coordination so you can relax.</p></li>
+        <li class="card"><h3>Custom Itineraries</h3><p>Tailored to budget, time, and interests.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Prefer email? Click the button to start a message, or use the form below.</p>
+      <div class="contact-actions">
+        <a class="cta" href="mailto:hello@BARIGJETtravelServices.com?subject=Trip%20Inquiry">Email Us</a>
+        <span style="color:#9fb0c2">or send the form ↓</span>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="row">
+          <input required name="name" placeholder="Your name" aria-label="Your name">
+          <input required type="email" name="email" placeholder="Email" aria-label="Email">
+        </div>
+        <textarea required name="message" rows="5" placeholder="How can we help?" aria-label="Your message"></textarea>
+        <button type="submit" class="cta">Send</button>
+      </form>
+      <p id="formStatus" style="margin-top:10px;color:#9dd1ff;display:none;">Thanks! Your message was sent.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> BARIGJET Travel Services • <a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
